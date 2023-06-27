@@ -1,0 +1,36 @@
+.container {
+  @apply min-w-[250px] hidden lg:flex flex-col gap-4 h-screen sticky top-0 z-20;
+}
+.header {
+  @apply p-5;
+}
+.header > a > h2 {
+  @apply text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-tr from-primary to-secondary;
+}
+.header > .searchBar {
+  @apply my-5;
+}
+.header > .searchBar > input {
+  @apply w-full border text-primary py-2 px-4 bg-slate-100 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary rounded-full;
+}
+.header > strong {
+  @apply font-bold text-lg;
+}
+.listSurah {
+  @apply flex-1 whitespace-nowrap overflow-y-auto px-5 pt-5 pb-10 flex flex-col gap-y-5;
+}
+.listSurah > a > .card {
+  @apply flex justify-between gap-10 p-4 hover:text-white hover:bg-gradient-to-tr from-primary/50 to-secondary/50 dark:bg-gray-800 rounded-md shadow-md shadow-primary;
+}
+.listSurah > a > .card > .latin {
+  @apply flex gap-4;
+}
+.listSurah > a > .card > .latin > .detail > div {
+  @apply flex gap-2;
+}
+.listSurah > a > .card > .latin > .detail > div > span {
+  @apply text-[10px] italic text-current;
+}
+.listSurah > a > .card > .arab {
+  @apply text-2xl;
+}

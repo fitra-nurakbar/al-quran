@@ -1,0 +1,18 @@
+.listSurah {
+  @apply flex-1 whitespace-nowrap px-4 pt-5 pb-10 flex flex-col gap-y-5;
+}
+.listSurah > a > .card {
+  @apply flex justify-between gap-10 p-4 md:p-8 border-2 border-transparent hover:border-primary dark:bg-gray-800 rounded-lg shadow-xl shadow-primary/20 dark:shadow-lg dark:shadow-primary/30 transition-all;
+}
+.listSurah > a > .card > .latin {
+  @apply flex gap-4;
+}
+.listSurah > a > .card > .latin > .detail {
+  @apply flex flex-col;
+}
+.listSurah > a > .card > .latin > .detail > span:nth-child(2) {
+  @apply text-[10px] italic text-current;
+}
+.listSurah > a > .card > .arab {
+  @apply text-2xl;
+}

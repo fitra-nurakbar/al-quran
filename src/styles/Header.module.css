@@ -1,0 +1,18 @@
+.header {
+  @apply px-4 lg:max-w-screen-lg md:mx-auto;
+}
+
+.navbar {
+  @apply p-4 flex justify-end;
+}
+
+.title {
+  @apply text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-tr from-primary to-secondary;
+}
+
+.searchBar {
+  @apply sticky top-0 p-5 inline-block;
+}
+.searchBar > input {
+  @apply w-full border text-primary py-2 px-4 backdrop-blur-md bg-primary/10 focus:outline-none focus:border-primary focus:ring-1 focus:ring-sky-300 rounded-full;
+}

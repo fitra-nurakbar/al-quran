@@ -1,0 +1,21 @@
+.main {
+  @apply min-h-screen flex flex-col lg:flex-row w-full;
+}
+.section {
+  @apply flex-1 min-w-0 min-h-0 flex relative justify-center bg-gradient-radial;
+}
+.verses {
+  @apply p-4 lg:p-6 overflow-auto w-full;
+}
+.arab {
+  @apply text-2xl text-right leading-[50px] border-b py-4;
+}
+.surahName {
+  @apply text-center
+}
+.surahName h2 {
+  @apply text-2xl font-semibold
+}
+.surahName span {
+  @apply text-xs italic text-opacity-50
+}
